@@ -222,8 +222,12 @@
 
 #menu-logo {
 	position: fixed;
+	float: left;
+	width: 200px;
 	top: 12.5px;
-	left: 5px;
+	left: 0px;
+	padding-left: 0px;
+	margin-left: 0px;
 	max-height: 50px;
 	z-index: -99;
 	opacity: 1;
@@ -235,13 +239,17 @@
 	margin: 20px;
 }
 
+#logo {
+	background-position: center;
+	background-repeat: no-repeat;
+	mix-blend-mode: color-burn;
+}
+
 @media screen {
 	#logo {
 		background-image: url("../img/intersections_1.svg");
 		height: 200px;
 		width: 60%;
-		background-position: center;
-		background-repeat: no-repeat;
 		/*background-size: cover;*/
 	}
 
@@ -255,8 +263,7 @@
 		background-image: url("../img/intersections_2.svg");
 		height: 100px;
 		width: 60%;
-		background-position: center;
-		background-repeat: no-repeat;
+
 	}
 
 	.description {
