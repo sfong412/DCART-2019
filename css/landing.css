@@ -1,0 +1,897 @@
+/* BACKGROUND GRADIENT SECTION STARTS HERE*/
+.large-header {
+	position: relative;
+	width: 100%;
+	background: linear-gradient(-45deg, #e0e0e0, #ec095a, #deff00, #00179b);
+	/*
+	background: linear-gradient(-45deg, #e0e0e0, #ec095a, #deff00, #00179b);
+	*/
+	overflow: hidden;
+	background-position: center center;
+	z-index: 1;
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 30s ease infinite;
+	-moz-animation: Gradient 30s ease infinite;
+	animation: Gradient 30s ease infinite;
+}
+
+/*support page gradient stuff*/
+.gradient-banner {
+	height: 78px;
+	background: linear-gradient(-45deg, #e0e0e0, #ec095a, #deff00, #00179b);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 30s ease infinite;
+	-moz-animation: Gradient 30s ease infinite;
+	animation: Gradient 30s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+
+	50% {
+		background-position: 100% 50%
+	}
+
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+
+	50% {
+		background-position: 100% 50%
+	}
+
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+
+	50% {
+		background-position: 100% 50%
+	}
+
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+/* BACKGROUND GRADIENT SECTION ENDS HERE*/
+
+
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: '';
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+body {
+	background: #080808;
+	color: #e0e0e0;
+	font-weight: 400;
+	font-size: 1em;
+	line-height: 1.25;
+	font-family: Montserrat, sans-serif;
+	height: 100%;
+}
+
+/* Canvas element that generates the background constellation animation*/
+#demo-canvas {
+	position: relative;
+}
+
+/* Focal Points logo that is located in the center of the page*/
+#logo {
+	position: absolute;
+	margin: auto;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	top: 25%;
+	left: 20%;
+}
+
+#container {
+	position: absolute;
+	height: 100%;
+}
+
+/* Div element that holds the description element below*/
+#subtitle {
+	background: #080808;
+	color: #e0e0e0;
+	margin: 180px 20px 0 20px;
+}
+
+#subtitle p {
+	color: #080808;
+	padding: 6px;
+	font-weight: 600;
+}
+
+#subtitle a {
+	color: #080808;
+}
+
+/* Text that appears below the big Focal Points logo*/
+.description {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #080808;
+	font: Montserrat, sans-serif;
+	text-align: center;
+	box-align: bottom;
+	left: 50%;
+	-webkit-transform: translate3d(-50%, -50%, 0);
+	transform: translate3d(-50%, -50%, 0);
+}
+
+/*Logo that located on the top-left corner of the menu bar*/
+#menu-logo {
+	position: fixed;
+	float: left;
+	top: 12.5px;
+	left: 0px;
+	padding-left: 30px;
+	margin-left: 0px;
+	max-height: 50px;
+	z-index: -99;
+	opacity: 1;
+	filter: invert(100%);
+}
+
+/* Old logo that is located in the top-left corner of the menu bar */
+#menu-logo-old {
+	position: fixed;
+	float: left;
+	width: 200px;
+	top: 12.5px;
+	left: 0px;
+	padding-left: 0px;
+	margin-left: 0px;
+	max-height: 50px;
+	z-index: -99;
+	opacity: 1;
+	filter: invert(100%);
+}
+
+.container {
+	position: relative;
+	background: #080808;
+	background-position: center;
+}
+
+/*Zahra's code for About page starts here*/
+.about-text {
+	width: 300px;
+	color: #e0e0e0;
+	font-family: "Crimson Text";
+	font-size: 18px;
+	position: absolute;
+	top: 120px;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+#info-container {
+	left: 10px;
+}
+
+#cart-container {
+	right: 10px;
+}
+
+.crew-container {
+	background-color: #e8ff49;
+	position: absolute;
+	width: 100%;
+	height: 600px;
+}
+
+h2,
+table.center {
+	margin-left: auto;
+	margin-right: auto;
+	color: #000;
+	font-weight: 400;
+	padding: 10px 20px 0px 20px;
+	font-family: 'Yrsa', serif;
+	font-weight: 400;
+	font-size: 18px;
+	font-style: normal;
+	border: #000;
+
+}
+
+/*Zahra's code for About page ends here*/
+
+#about-container {
+	min-height: 750px;
+}
+
+#about-container img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	/*
+	max-height: 750px;
+	max-width: 513px;*/
+	z-index: 1;
+}
+
+#middle-dots {
+	position: absolute;
+	opacity: 1;
+	transform: translate(50%, -100%);
+	z-index: -1;
+}
+
+/* div element located below the canvas*/
+.footer {
+	background: #080808;
+	height: 600px;
+	font-weight: 400;
+	padding: 10px 20px 0px 20px;
+	font-family: 'Yrsa', serif;
+	font-weight: 400;
+	font-size: 18px;
+	font-style: normal;
+}
+
+/*
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+*/
+
+/*Adds space between the canvas and the description text*/
+.footer .footer-text:nth-child(2) {
+	margin-top: 40px;
+}
+
+/*The big logo that is on the center of the home page*/
+#logo {
+	background-position: center;
+	background-repeat: no-repeat;
+	/*mix-blend-mode: color-burn;*/
+
+}
+
+/* Desktop CSS*/
+@media screen {
+	#logo {
+		background-image: url("../img/combo_stacked.svg");
+		height: 250px;
+		width: 60%;
+		/*background-size: cover;*/
+	}
+
+	.description {
+		margin-top: 300px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: left;
+	}
+
+	/*Menu bar on top*/
+	.menu-bar {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 20%;
+		max-height: 75px;
+		background: #080808;
+		padding-top: 30px;
+		backface-visibility: visible;
+		opacity: 1;
+		z-index: 99;
+	}
+
+	/*Links located on the menu bar*/
+	.menu-bar a {
+		padding: 10px 30px 10px 30px;
+		color: #e0e0e0;
+		font-family: Montserrat, sans-serif;
+		font-weight: 400;
+		text-align: center;
+		text-decoration: none;
+		display: none;
+	}
+
+	/*Menu bar links on hover*/
+	.site-link:hover {
+		background: #e0e0e0;
+		color: #080808;
+		-webkit-animation: menu-bar-hover 0.5s ease;
+		-moz-animation: menu-bar-hover 0.5s ease;
+		animation: menu-bar-hover 0.5s ease;
+		animation-fill-mode: both;
+	}
+
+	@-webkit-keyframes menu-bar-hover {
+		0% {
+			color: #e0e0e0;
+			background: #080808;
+		}
+
+		100% {
+			background: #e0e0e0;
+			color: #080808;
+		}
+	}
+
+	@-moz-keyframes menu-bar-hover {
+		0% {
+			color: #e0e0e0;
+			background: #080808;
+		}
+
+		100% {
+			background: #e0e0e0;
+			color: #080808;
+		}
+	}
+
+	@keyframes menu-bar-hover {
+		0% {
+			color: #e0e0e0;
+			background: #080808;
+		}
+
+		100% {
+			background: #e0e0e0;
+			color: #080808;
+		}
+	}
+
+	/*Icons located on the top-right corner of the menu bar*/
+	.menu-bar i {
+		font-size: 20px;
+	}
+
+	/*Mobile menu button (right now, it is hidden on desktop)*/
+	.mobile-icon {
+		color: #e0e0e0;
+		float: right;
+		position: relative;
+		display: none;
+	}
+
+	/*Facebook and Instagram icons in menu bar*/
+	.fab {
+		text-align: center;
+		font-size: 20px;
+
+	}
+
+	/*Facebook and Instagram icons with hover*/
+	.social-media:hover {
+		background: #e0e0e0;
+		color: #080808;
+		-webkit-animation: menu-bar-hover 0.5s ease;
+		-moz-animation: menu-bar-hover 0.5s ease;
+		animation: menu-bar-hover 0.5s ease;
+		animation-fill-mode: both;
+	}
+
+	.site-link:nth-child(2) {
+		margin-left: 180px;
+		text-align: center;
+	}
+
+	/*Facebook and Instagram icons in menu bar*/
+	.social-media {
+		position: relative;
+		float: right;
+		right: 0px;
+		text-align: center;
+		display: inline-block;
+		transform: translate3d(-25%, -25%, 0);
+	}
+
+	.social-subtitle{
+		display:block;
+	}
+
+	.desktop-only {
+		display: block;
+	}
+
+	.mobile-only {
+		display: none;
+	}
+
+	/*The text that is in the description box*/
+	.footer .footer-text {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0 0 16px 0;
+		float: left;
+	}
+
+	/*Currently used for crew section element in support page (move this into about page)*/
+	.footer table,
+	th,
+	td {
+		padding: 5px 24px;
+		text-align: center;
+	}
+
+	.footer table {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/*Intended to position the video player*/
+	.footer #video-container {
+		position: relative;
+		width: 50%;
+		top: 0;
+		left: 0;
+		float: left;
+	}
+
+	/*Wrapper for the video teaser*/
+	.videoWrapper {
+		position: relative;
+		float: left;
+		padding-bottom: 25%;
+		/* 16:9 */
+		padding-top: 25px;
+		width: 50%;
+		height: 0;
+	}
+
+	/*The iframe element for the video*/
+	.videoWrapper iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	#header-less {
+		position: relative;
+		top: 90px;
+		padding: 0 10%;
+	}
+
+	#kickstarter {
+		background: green;
+		font-family: Montserrat, sans-serif;
+		display: inline;
+		font-size: 26px;
+		margin: 380px 0 20px 0;
+		padding: 18px 0;
+		position: relative;
+	}
+
+	#kickstarter i {
+		margin: 0 40px 0 40px;
+		font-size: 32px;
+	}
+
+	#kickstarter a:visited {
+		color: #e0e0e0;
+	}
+
+	#support-us {
+		float: right;
+		color: #080808;
+		background: #DEFF00;
+		width: 45%;
+	}
+
+	#support-us p {
+		font-family: Montserrat, serif;
+		padding: 40px 10%;
+	}
+
+	#social-media-support {
+		width: 100%;
+	}
+
+	#social-media-support div {
+		margin-right: 8px;
+	}
+
+	#fb {
+		background: #3a589e;
+		font-family: Montserrat, sans-serif;
+		display: inline-block;
+		margin: 20px 0;
+		padding: 18px 0;
+	}
+
+	#ig {
+		background: #f10176;
+		font-family: Montserrat, sans-serif;
+		display: inline-block;
+		margin: 20px 0;
+		padding: 18px 0;
+	}
+
+	.support-icon {
+		margin: 0 25px 0 25px;
+		font-size: 32px;
+	}
+
+	#follow-us {
+		font-family: Montserrat, sans-serif;
+		float: right;
+		display: inline-block;
+		margin: 20px 0;
+		padding: 18px 0;
+		font-weight: 600;
+	}
+
+	.sponsor {
+		height: 600px;
+		width: 80%;
+		display: block;
+		font-family: Montserrat, serif;
+		color: #e0e0e0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.sponsor p {
+		padding-top: 80px;
+		position: relative;
+		text-align: center;
+	}
+
+	.sponsor img {
+		display: inline-block;
+		max-width: 250px;
+		max-height: 150px;
+		padding: 6px;
+		z-index: 99;
+	}
+
+	/*Copyright section on the bottom of the page*/
+	#copyright {
+		background: #e0e0e0;
+		display: inline-block;
+		width: 100%;
+		position: relative;
+		color: #080808;
+		text-align: center;
+		margin-bottom: 0;
+		padding-top: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		bottom: 0;
+		height: 70px;
+	}
+
+	.crew-container {
+		background-color: #e8ff49;
+		position: absolute;
+		width: 100%;
+		height: 600px;
+	}
+
+	/*Laura's code below*/
+
+	/*********************************************************************/
+
+	.head_title {
+		display: inline-block;
+		/*Keeps things inside a block; links*/
+		/*border: solid 1px red; */
+		width: 100%;
+		/* width of the image and red box*/
+		height: 65px;
+		/*height of red box; Extend this if more pictures come */
+		margin-top: 60px;
+		margin-bottom: 15px;
+		text-align: center;
+	}
+
+	.page_links {
+		display: inline-block;
+		/*Keeps things inside a block; links*/
+		width: 100%;
+		/* width of the image and red box*/
+		height: 65px;
+		/*height of red box; Extend this if more pictures come */
+		margin-top: 10px;
+		text-align: center;
+
+	}
+
+	.head_title h2 {
+		font-family: 'Montserrat';
+		font-weight: 400;
+		font-size: 30px;
+		padding-bottom: 18px;
+		border-bottom: 1.2px solid #fff;
+		margin-left: 170px;
+		/*higher the shorter*/
+		margin-right: 170px;
+		/*for changing the white line*/
+		color: #FFF;
+		text-align: center;
+	}
+
+	/*link font*/
+	h3 {
+		font-family: 'Montserrat', Regular;
+		font-size: 18px;
+		font-weight: 400;
+		color: #deff00;
+		text-align: center;
+	}
+
+	/*THIS IS STILL NOT COMPLETELY CENTERED - SAME FOR THE LINE IN THE HEADLINE
+/*main body*/
+	.main_container {
+		margin-top: 10px;
+		overflow: hidden;
+		margin-left: 168px;
+		/*higher the shorter*/
+		margin-right: 168px;
+		/*for changing the white line*/
+		float: left;
+		position: relative;
+		/*not sure if this is right*/
+		left: 20px;
+		right: 20px;
+	}
+
+	/*the gallery section*/
+	/*need to make a circular version of this for the projects page*/
+	.filterDiv {
+		float: left;
+		/*background-color: #966; */
+		background-color: Transparent;
+		color: #ffffff;
+		width: 170px;
+		height: 170px;
+		text-align: center;
+		margin: 2px;
+		display: none;
+		border-radius: 50%;
+		padding: 10px;
+		margin-right: 10px;
+	}
+
+	.show {
+		display: block;
+	}
+
+	/*links*/
+	.btn {
+		border: none;
+		outline: none;
+		padding: 12px 16px;
+		cursor: pointer;
+		font-family: 'Montserrat', Regular;
+		font-size: 18px;
+		font-weight: 400;
+		color: #ec095a;
+		background-color: Transparent;
+		text-align: center;
+	}
+
+	/*link hover*/
+	.btn:hover {
+		background-color: none;
+		font-family: 'Montserrat', Regular;
+		font-size: 18px;
+		font-weight: 400;
+		color: #ffbe18;
+		text-align: center;
+	}
+
+	/*active link or current page*/
+	.btn.active {
+		color: #ffbe18;
+	}
+
+	#particles-js {
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: -50;
+	}
+
+	/* Mobile only CSS*/
+	@media screen and (max-width: 900px) {
+		#logo {
+			background-image: url("../img/combo_stacked.svg");
+			height: 200px;
+			width: 60%;
+		}
+
+		.description {
+			margin-top: 220px;
+			width: 100%;
+		}
+
+		/*Mobile menu button*/
+		.mobile-icon {
+			display: none;
+		}
+
+		/*Hides menu bar items on mobile*/
+		.menu-item {
+			display: none;
+		}
+
+		/*Hides Facebook and Instagram icons on mobile*/
+		.fab {
+			display: none;
+		}
+
+		/*Mobile menu button*/
+		.menu-bar i {
+			font-size: 25px;
+			transform: translate(-50%, -50%);
+		}
+
+		/*Menu bar after mobile menu opened*/
+		.menu-bar.responsive {
+			position: fixed;
+			top: 0;
+			transform: translate(0, -40%);
+		}
+
+		/*Mobile menu button after menu opened*/
+		.menu-bar.responsive i {
+			position: relative;
+			transform: none;
+			right: 0;
+			top: 0;
+		}
+
+		.social-media {
+			transform: none;
+		}
+
+		.desktop-only {
+			display: none;
+		}
+
+		.mobile-only {
+			display: block;
+		}
+
+
+		/* Div element that holds the description element below*/
+		#subtitle {
+			background: #080808;
+			color: #e0e0e0;
+			margin: 180px 20px 0 20px;
+		}
+
+		#subtitle p {
+			color: #080808;
+			padding: 6px;
+			font-weight: 600;
+		}
+
+#subtitle i {
+	display: inline-block;
+}
+
+
+		/*<a> elements in Menu bar after mobile menu opened*/
+		.menu-bar.responsive a {
+			float: none;
+			background: #080808;
+			margin-left: 0;
+			font-size: 30px;
+			padding: 20px 30px;
+			color: #e0e0e0;
+			border: 1px solid #e0e0e0;
+			border-bottom: 080808;
+			display: block;
+			text-align: right;
+		}
+
+		.menu-bar.responsive .desktop-only {
+			display: none;
+		}
+
+		/*The text that is in the description box*/
+		.footer .footer-text {
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 0 0 16px 0;
+			float: left;
+		}
+
+		/*Intended to position the video player*/
+		.footer #video-container {
+			position: relative;
+			display: block;
+			width: 100%;
+			top: 0;
+			left: 0;
+			float: left;
+		}
+
+		/*Wrapper for the video teaser*/
+		.videoWrapper {
+			display: none;
+			position: relative;
+			float: left;
+			padding-bottom: 25%;
+			/* 16:9 */
+			padding-top: 25px;
+			width: 100%;
+			height: 65%;
+		}
+
+		/*The iframe element for the video*/
+		.videoWrapper iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		/*Adds space between the canvas and the description text*/
+		.footer .footer-text:nth-child(2) {
+			margin-top: 0;
+		}
+
+		#kickstarter i {
+			display: inline;
+		}
+
+		#social-media-support .support-icon {
+			display: inline;
+		}
+	}
+
+	/*Makes square images crop into a circle*/
+	.circular--square {
+		width: 20%;
+		max-width: 200px;
+		border-top-left-radius: 50% 50%;
+		border-top-right-radius: 50% 50%;
+		border-bottom-right-radius: 50% 50%;
+		border-bottom-left-radius: 50% 50%;
+	}
+}
