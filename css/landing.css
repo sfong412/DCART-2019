@@ -308,7 +308,6 @@ table.center {
 	/*Menu bar on top*/
 	.menu-bar {
 		position: fixed;
-		display: none;
 		top: 0;
 		left: 0;
 		width: 100%;
@@ -891,6 +890,12 @@ table.center {
 
 		#social-media-support .support-icon {
 			display: inline;
+		}
+	}
+
+	@media screen and (max-height:750px){
+		#logo{
+			top: 15%;
 		}
 	}
 
