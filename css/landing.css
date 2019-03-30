@@ -893,7 +893,7 @@ table.center {
 		}
 	}
 
-	@media screen and (max-height:750px){
+	@media screen and (max-height:820px){
 		#logo{
 			top: 15%;
 		}
